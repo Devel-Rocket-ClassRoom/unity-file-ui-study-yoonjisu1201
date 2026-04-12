@@ -1,0 +1,56 @@
+using System.Collections.Generic;
+using System.IO;
+using UnityEngine;
+using UnityEngine.iOS;
+
+public class FileStream3 : MonoBehaviour
+{
+    void Start()
+    {
+        string path = Path.Combine(Application.persistentDataPath, "settings.cfg");
+
+        string initialContent = "master_volume=80\nbgm_volume=70\nsfx_volume=90\nlanguage=kr\nshow_damage=true";
+        File.WriteAllText(path, initialContent);
+
+        //저장할 딕셔너리
+        Dictionary<string, string> settings = new Dictionary<string, string>();
+
+        // = 기준으로 키, 값 분리
+        using (StreamReader reader = new StreamReader(path))
+        {
+            string line;
+            while ((line = reader.ReadLine()) != null)
+            {
+                string[] parts = line.Split('=');
+                if (parts.Length == 2)
+                {
+                    settings[parts[0]] = parts[1]; 
+                }
+            }
+            Debug.Log($"설정 로드 완료 (항목 {settings.Count}개)");
+        }
+        Debug.Log("--- 변경 전 ---");
+        Debug.Log($"bgm_volume = {settings["bgm_volume"]}");
+        Debug.Log($"language = {settings["language"]}");
+
+
+        settings["bgm_volume"] = "50";
+        settings["language"] = "en";
+
+        using (StreamWriter writer = new StreamWriter(path))
+        {
+            foreach (var kvp in settings)
+            {
+                writer.WriteLine($"{kvp.Key}={kvp.Value}");
+            }
+            Debug.Log("--- 변경 후 저장 ---");
+            Debug.Log($"bgm_volume = {settings["bgm_volume"]}");
+            Debug.Log($"language = {settings["language"]}");
+        }
+
+        string finalContent = File.ReadAllText(path);
+        Debug.Log("--- 최종 파일 내용 ---");
+        Debug.Log(finalContent);
+    }
+
+}
