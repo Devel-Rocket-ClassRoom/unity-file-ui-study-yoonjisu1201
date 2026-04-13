@@ -8,6 +8,8 @@ public class StringTable : DataTable
         public string Id {  get; set; }
         public string String { get; set; }
     }
+    public static readonly string Unkown = "키 없음";
+
     private readonly Dictionary<string, string> table = new Dictionary<string, string>();
 
     public override void Load(string filename)
@@ -16,6 +18,7 @@ public class StringTable : DataTable
 
         string path = string.Format(FormatPath, filename);
         TextAsset textAsset = Resources.Load<TextAsset>(path);
+        //Data 타입으로 개체가 생성됨 
         var list = LoadCSV<Data>(textAsset.text);
         foreach ( Data data in list )
         {
@@ -29,8 +32,8 @@ public class StringTable : DataTable
             }
         }
     }
-    public static readonly string Unkown = "키 없음";
-    public string Get(string key)
+    
+    public string Get(string key)  //키로 접근해서 value값을 가져오는 메서드
     {
         if (!table.ContainsKey(key))
         {

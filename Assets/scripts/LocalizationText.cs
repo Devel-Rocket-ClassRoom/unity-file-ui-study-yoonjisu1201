@@ -15,22 +15,22 @@ public class LocalizationText : MonoBehaviour
     {
         if (Application.isPlaying)
         {
-            Variables.OnLanguageChanged -= OnChangeLanguage;
             OnChangedId();
         }
 #if UNITY_EDITOR
         else
         {
-            OnChangeLanguage(editorLang);
+            OnChangedLanguage(editorLang);
             //OnChangedId();
         }
+        Variables.OnLanguageChanged += OnChangedLanguage;
 #endif
     }
 
     private void OnValidate()
     {
 #if UNITY_EDITOR
-        OnChangeLanguage(editorLang);
+        OnChangedLanguage(editorLang);
         //OnChangedId();
 #else
         OnChangeLanguage();
@@ -38,18 +38,22 @@ public class LocalizationText : MonoBehaviour
 #endif
     }
 
+    private void OnDisable()
+    {
+        Variables.OnLanguageChanged -= OnChangedLanguage;
+    }
     private void OnChangedId()
     {
         text.text = DataTableManager.StringTable.Get(id);
     }
 
-    private void OnChangeLanguage()
+    private void OnChangedLanguage()
     {
         text.text = DataTableManager.StringTable.Get(id);
     }
 
 #if UNITY_EDITOR
-    private void OnChangeLanguage(Languages lang)
+    private void OnChangedLanguage(Languages lang)
     {
         var stringTable = DataTableManager.GetStringTable(lang);
         text.text = stringTable.Get(id);

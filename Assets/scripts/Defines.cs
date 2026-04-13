@@ -6,11 +6,13 @@ public enum Languages
     English,
     Japanese,
 }
+
+//현재 언어 설정과 관련된 변수와 이벤트를 관리하는 클래스
 public static class Variables
 {
-    public static System.Action OnLanguageChange;
+    public static System.Action OnLanguageChanged;
     private static Languages language = Languages.Korean;
-    private static Languages Languages
+    public static Languages Language
     {
         get { return language; }
         set
@@ -18,7 +20,7 @@ public static class Variables
             if (language == value) return;
             language = value;
             DataTableManager.ChangeLanguage(language);
-            OnLanguageChange?.Invoke();
+            OnLanguageChanged?.Invoke();
         }
     }
 }
