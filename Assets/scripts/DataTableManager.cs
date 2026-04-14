@@ -11,6 +11,8 @@ public static class DataTableManager
     //현재 설정된 언어에 해당하는 StringTable을 반환하는 프로퍼티
     public static StringTable StringTable => Get<StringTable>(DataTableIds.String); 
 
+    public static ItemTable ItemTable => Get<ItemTable>(DataTableIds.Item);
+    public static CharacterTable CharacterTable => Get<CharacterTable>(DataTableIds.Character);
 #if UNITY_EDITOR
     public static StringTable GetStringTable(Languages lang)
     {
@@ -39,7 +41,16 @@ public static class DataTableManager
             tables.Add(id, stringTable);
         }
 #endif
+        var itemTable = new ItemTable();
+        itemTable.Load(DataTableIds.Item);
+        tables.Add(DataTableIds.Item, itemTable);
+
+        var characterTable = new CharacterTable();
+        characterTable.Load(DataTableIds.Character);
+        tables.Add(DataTableIds.Character, characterTable);
     }
+
+
 
     public static void ChangeLanguage(Languages lang)
     {
@@ -67,9 +78,10 @@ public static class DataTableManager
     }
     public static T Get<T>(string id) where T : DataTable
     {
+        Debug.Log(id);
         if (!tables.ContainsKey(id))
         {
-            Debug.LogError("테이블 없음");
+             Debug.LogError("테이블 없음");
             return null;
         }
         return tables[id] as T;
