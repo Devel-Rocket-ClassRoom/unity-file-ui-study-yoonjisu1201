@@ -10,3 +10,17 @@ Item1Desc,これは剣だ。
 Item2Desc,これは盾だ。
 Item3Desc,これは弓だ。
 Item4Desc,これはポーションだ。
+Char1Name,カイラス
+Char2Name,アスカロン
+Char3Name,エレノア
+Char4Name,バルボッサ
+Jop1,アーチャー
+Jop2,ウォーリアー
+Jop3,メイジ
+Jop4,パイレーツ
+Char1Desc,遠距離攻撃が大好きな弓使い
+Char2Desc,猪突猛進な戦士
+Char3Desc,ガリ勉な魔術師
+Char4Desc,欲張りな海賊
+Label_Atk,攻撃力
+Label_Def,防御力

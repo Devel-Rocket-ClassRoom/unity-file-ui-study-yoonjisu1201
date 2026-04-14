@@ -7,7 +7,7 @@ public class CharacterTableTest1 : MonoBehaviour
 {
     public string characterId;
     public Image icon;
-    public TextMeshProUGUI textName;
+    public LocalizationText textName;
     public CharacterTableTest2 CharacterTableTest2;
 
     private void OnEnable()
@@ -27,7 +27,7 @@ public class CharacterTableTest1 : MonoBehaviour
             icon.sprite = data.SpriteIcon;
 
             //텍스트 변경
-            textName.text = data.Name;
+            textName.id = data.Name;
         }
     }
     public void OnClick()

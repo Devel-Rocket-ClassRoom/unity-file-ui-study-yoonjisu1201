@@ -1,5 +1,5 @@
-﻿Id,Name,Jop,Desc,Power,Icon
-Char1,궁수최고,궁수,직업은 궁수입니다,250,Icon_Bow02
-Char2,전사최고,전사,직업은 전사입니다,280,Icon_Helmet01
-Char3,마법사최고,마법사,직업은 마법사입니다,300,Icon_Book
-Char4,해적최고,해적,직업은 해적입니다,260,Icon_Skull01
+﻿Id,Name,Jop,Desc,Atk,Def,Icon
+Char1,Char1Name,Jop1,Char1Desc,18,12,Icon_Archer
+Char2,Char2Name,Jop2,Char2Desc,12,18,Icon_Warrior
+Char3,Char3Name,Jop3,Char3Desc,22,8,Icon_Mage
+Char4,Char4Name,Jop4,Char4Desc,16,14,Icon_Pirate

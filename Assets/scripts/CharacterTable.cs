@@ -11,14 +11,15 @@ public class CharacterData
     public string Name { get; set; }
     public string Jop { get; set; }
     public string Desc { get; set; }
-    public int Power { get; set; }
+    public int Atk { get; set; }
+    public int Def { get; set; }
     public string Icon { get; set; }
 
     public Sprite SpriteIcon => Resources.Load<Sprite>($"Icon/{Icon}");
 
     public override string ToString()
     {
-        return $"{Id} / {Name} / {Jop} / {Desc} / {Power} / {Icon}";
+        return $"{Id} / {Name} / {Jop} / {Desc} / {Atk} / {Def} / {Icon}";
     }
 }
 

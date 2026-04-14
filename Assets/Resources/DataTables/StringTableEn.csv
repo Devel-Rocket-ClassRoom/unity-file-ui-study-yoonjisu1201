@@ -10,3 +10,17 @@ Item1Desc,This is a sword.
 Item2Desc,This is a shield.
 Item3Desc,This is a bow.
 Item4Desc,This is a potion.
+Char1Name,Kailas
+Char2Name,Ascalon
+Char3Name,Eleanor
+Char4Name,Barbossa
+Jop1,Archer
+Jop2,Warrior
+Jop3,Mage
+Jop4,Pirate
+Char1Desc,An archer who loves kiting from a distance
+Char2Desc,A warrior who always dives headfirst into the fight
+Char3Desc,A nerd mage who studies magic except when sleeping
+Char4Desc,A pirate who would do anything for a gold coin
+Label_Atk,Atk
+Label_Def,Def

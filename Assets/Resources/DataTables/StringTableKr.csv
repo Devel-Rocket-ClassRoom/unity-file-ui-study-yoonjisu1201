@@ -10,3 +10,18 @@ Item1Desc,이것은 검이다.
 Item2Desc,이것은 방패다.
 Item3Desc,이것은 활이다.
 Item4Desc,이것은 물약이다.
+Char1Name,카일러스
+Char2Name,아스칼론
+Char3Name,엘리노아
+Char4Name,바르보사
+Jop1,궁수
+Jop2,전사
+Jop3,마법사
+Jop4,해적
+Char1Desc,멀리서 한 대 치고 튀는 게 제일 즐거운 궁수
+Char2Desc,앞뒤 안 가리고 일단 몸부터 들이밀고 보는 전사
+Char3Desc,잠잘 시간 빼고는 마법 공부만 하는 지독한 마법사
+Char4Desc,돈이라면 사족을 못 쓰는 해적
+Label_Atk,공격력
+Label_Def,방어력
+

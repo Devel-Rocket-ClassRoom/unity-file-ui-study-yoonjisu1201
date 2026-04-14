@@ -51,6 +51,7 @@ public class LocalizationText : MonoBehaviour
     {
         text.text = DataTableManager.StringTable.Get(id);
     }
+    
 
 #if UNITY_EDITOR
     private void OnChangedLanguage(Languages lang)
