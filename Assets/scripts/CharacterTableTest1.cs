@@ -32,6 +32,6 @@ public class CharacterTableTest1 : MonoBehaviour
     }
     public void OnClick()
     {
-        CharacterTableTest2.SetItemData(characterId);
+        CharacterTableTest2.SetCharacterData(characterId);
     }
 }

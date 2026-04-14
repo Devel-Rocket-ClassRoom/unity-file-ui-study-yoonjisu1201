@@ -6,7 +6,7 @@ public class CharacterTableTest2 : MonoBehaviour
     public Image icon;
     public LocalizationText textName;
     public LocalizationText textDesc;
-    public TextMeshProUGUI stat;
+    public LocalizationText stat;
 
     private void OnEnable()
     {
@@ -17,28 +17,32 @@ public class CharacterTableTest2 : MonoBehaviour
         icon.sprite = null;
         textName.id = string.Empty;
         textDesc.id = string.Empty;
-        stat.text = string.Empty;
+        stat.id = string.Empty;
+        stat.charAtk = 0;
+        stat.charDef = 0;
 
         textName.OnChangedId();
         textDesc.OnChangedId();
+        stat.OnChangedId();
     }
 
-    public void SetItemData(string itemId)
+    public void SetCharacterData(string characterId)
     {
-        CharacterData data = DataTableManager.CharacterTable.Get(itemId);
-        SetItemData(data);
+        CharacterData data = DataTableManager.CharacterTable.Get(characterId);
+        SetCharacterData(data);
     }
-    public void SetItemData(CharacterData data)
+    public void SetCharacterData(CharacterData data)
     {
-        string labelAtk = DataTableManager.StringTable.Get("Label_Atk");
-        string labelDef = DataTableManager.StringTable.Get("Label_Def");
         icon.sprite = data.SpriteIcon;
         textName.id = data.Name;
         textDesc.id = data.Desc;
-        stat.text = $"{labelAtk}: {data.Atk}, {labelDef}: {data.Def}";
+        stat.id = "Label";
+        stat.charAtk = data.Atk;
+        stat.charDef = data.Def;
 
         textName.OnChangedId();
         textDesc.OnChangedId();
+        stat.OnChangedId();
     }
 
 }

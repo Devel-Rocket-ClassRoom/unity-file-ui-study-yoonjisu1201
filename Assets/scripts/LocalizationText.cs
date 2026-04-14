@@ -9,7 +9,10 @@ public class LocalizationText : MonoBehaviour
     public Languages editorLang;
 #endif
     public string id;
+    public int charAtk;
+    public int charDef;
     public TextMeshProUGUI text;
+    public CharacterData characterData = new CharacterData();
 
     private void OnEnable()
     {
@@ -44,14 +47,37 @@ public class LocalizationText : MonoBehaviour
     }
     public void OnChangedId()
     {
-        text.text = DataTableManager.StringTable.Get(id);
+        if (id == "Label")
+        {
+            string AtkLavel = DataTableManager.StringTable.Get("Label_Atk");
+            string DefLavel = DataTableManager.StringTable.Get("Label_Def");
+            if (characterData != null)
+            {
+                text.text = $"{AtkLavel}: {charAtk},{DefLavel}: {charDef} ";
+            }
+        }
+        else
+        {
+            text.text = DataTableManager.StringTable.Get(id);
+        }
     }
 
     private void OnChangedLanguage()
     {
-        text.text = DataTableManager.StringTable.Get(id);
+        if (id == "Label")
+        {
+            string AtkLavel = DataTableManager.StringTable.Get("Label_Atk");
+            string DefLavel = DataTableManager.StringTable.Get("Label_Def");
+
+                text.text = $"{AtkLavel}: {charAtk},{DefLavel}: {charDef} ";
+
+        }
+        else
+        {
+            text.text = DataTableManager.StringTable.Get(id);
+        }
     }
-    
+
 
 #if UNITY_EDITOR
     private void OnChangedLanguage(Languages lang)

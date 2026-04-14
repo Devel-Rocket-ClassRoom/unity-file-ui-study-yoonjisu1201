@@ -18,7 +18,7 @@ public enum ItemTypes
 public static class Variables
 {
     public static System.Action OnLanguageChanged;
-    private static Languages language = Languages.Korean;
+    private static Languages language = Languages.Japanese;
     public static Languages Language
     {
         get { return language; }

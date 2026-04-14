@@ -1330,7 +1330,7 @@ MonoBehaviour:
   icon: {fileID: 1837546130}
   textName: {fileID: 1232695005}
   textDesc: {fileID: 1391027081}
-  stat: {fileID: 1609908182}
+  stat: {fileID: 1609908181}
 --- !u!114 &461052759
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2977,9 +2977,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8605c7fffb543924993850f91c56953e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemButton
-  id: Item1
-  itemImage: {fileID: 820350082}
-  itemNameText: {fileID: 1381912900}
 --- !u!114 &742720984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5133,9 +5130,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8605c7fffb543924993850f91c56953e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemButton
-  id: Item4
-  itemImage: {fileID: 1712074}
-  itemNameText: {fileID: 35104490}
 --- !u!114 &1477474149
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5948,9 +5942,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8605c7fffb543924993850f91c56953e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemButton
-  id: Item2
-  itemImage: {fileID: 661093229}
-  itemNameText: {fileID: 791260679}
 --- !u!114 &1830571411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6764,9 +6755,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8605c7fffb543924993850f91c56953e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemButton
-  id: Item3
-  itemImage: {fileID: 611179405}
-  itemNameText: {fileID: 468870799}
 --- !u!114 &1952019605
 MonoBehaviour:
   m_ObjectHideFlags: 0
