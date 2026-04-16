@@ -27,8 +27,6 @@ public class ItemTable : DataTable
     private readonly Dictionary<string, ItemData> table =
         new Dictionary<string, ItemData>();
 
-
-
     public override void Load(string filename)
     {
         table.Clear();
@@ -61,4 +59,14 @@ public class ItemTable : DataTable
 
         return table[id];
     }
+    public List<string> GetItemId()
+    {
+         List<string> Ids = new List<string>();
+        foreach (var item in table.Values)
+        {
+            Ids.Add(item.Id);
+        }
+        return Ids;
+    }
+
 }

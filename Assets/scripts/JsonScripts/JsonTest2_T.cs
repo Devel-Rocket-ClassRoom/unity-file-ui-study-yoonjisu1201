@@ -46,7 +46,6 @@ public class JsonTest2_T : MonoBehaviour
         jsonSettings.Converters.Add(new QuaternionConverter());
         jsonSettings.Converters.Add(new ColorConverter());
     }
-
     private void CreateRandomObject()
     {
         var prefabName = prefabNames[Random.Range(0, prefabNames.Length)];
