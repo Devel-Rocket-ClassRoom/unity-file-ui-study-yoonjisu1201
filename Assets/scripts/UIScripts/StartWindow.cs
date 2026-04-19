@@ -14,10 +14,7 @@ public class StartWindow : GenericWindow
         startButton.onClick.AddListener(OnNewGame);
         optionButton.onClick.AddListener(OnOption);
     }
-    //public void Start()
-    //{
-    //    Open();
-    //}
+   
     public override void Open()
     {
         continueButton.gameObject.SetActive(canContinue);
@@ -34,14 +31,14 @@ public class StartWindow : GenericWindow
     }
     public void OnContinue()
     {
-        Debug.Log("Oncontinue()");
+        windowManager.Open(1);
     }
     public void OnNewGame()
     {
-        Debug.Log("OnNewGame()");
+        windowManager.Open(2);
     }
     public void OnOption()
     {
-        Debug.Log("OnOption()");
+        windowManager.Open(3);
     }
 }
