@@ -24,3 +24,11 @@ Char3Desc,ガリ勉な魔術師
 Char4Desc,欲張りな海賊
 Label_Atk,攻撃力
 Label_Def,防御力
+NAME,名前
+DESC,説明
+TYPE,タイプ
+VALUE,価値
+COST,コスト
+WEAPON,武器
+EQUIP,装備
+CONSUMABLE,消耗品

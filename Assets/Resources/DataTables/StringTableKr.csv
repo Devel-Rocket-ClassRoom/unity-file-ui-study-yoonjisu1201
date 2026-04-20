@@ -24,4 +24,12 @@ Char3Desc,잠잘 시간 빼고는 마법 공부만 하는 지독한 마법사
 Char4Desc,돈이라면 사족을 못 쓰는 해적
 Label_Atk,공격력
 Label_Def,방어력
+NAME,이름
+DESC,설명
+TYPE,타입
+VALUE,밸류
+COST,코스트
+WEAPON,무기
+EQUIP,장비
+CONSUMABLE,소모품
 

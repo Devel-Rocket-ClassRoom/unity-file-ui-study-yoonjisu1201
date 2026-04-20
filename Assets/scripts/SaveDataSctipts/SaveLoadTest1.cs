@@ -11,7 +11,7 @@ public class SaveLoadTest1 : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            if (SaveLoadManager.Data == null) SaveLoadManager.Data = new SaveDataV3();
+            if (SaveLoadManager.Data == null) SaveLoadManager.Data = new SaveDataV4();
             SaveLoadManager.Data.Name = "TEST1234";
             SaveLoadManager.Data.Gold = 4321;
 
@@ -22,7 +22,7 @@ public class SaveLoadTest1 : MonoBehaviour
         {
             if (SaveLoadManager.Load())
             {
-                foreach (var itemId in SaveLoadManager.Data.ItemIds)
+                foreach (var itemId in SaveLoadManager.Data.ItemList)
                 {
                     Debug.Log($"{itemId}");
                 }
@@ -38,7 +38,9 @@ public class SaveLoadTest1 : MonoBehaviour
         {
             List<string> itemIds = DataTableManager.ItemTable.GetItemId();
             string randonId = itemIds[Random.Range(0, itemIds.Count)];
-            SaveLoadManager.Data.ItemIds.Add(randonId);
+            SaveItemData data = new SaveItemData();
+            data.ItemData = DataTableManager.ItemTable.Get(randonId);
+            SaveLoadManager.Data.ItemList.Add(data);
             Debug.Log($"아이디 추가: {randonId}");
         }
     }

@@ -24,3 +24,11 @@ Char3Desc,A nerd mage who studies magic except when sleeping
 Char4Desc,A pirate who would do anything for a gold coin
 Label_Atk,Atk
 Label_Def,Def
+NAME,Name
+DESC,Description
+TYPE,Type
+VALUE,Value
+COST,Cost
+WEAPON,Weapon
+EQUIP,Equipment
+CONSUMABLE,Consumable
