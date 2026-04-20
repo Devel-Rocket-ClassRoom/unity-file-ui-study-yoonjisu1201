@@ -25,6 +25,7 @@ public static class DataTableManager
         Init();
     }
 
+    //시작할 때 데이터테이블 매니저 딕셔너리 세팅
     private static void Init()
     {
         //런타임 실행 시 현재 언어에 맞는 StringTable만 로드
@@ -37,6 +38,7 @@ public static class DataTableManager
         foreach (var id in DataTableIds.StringTableIds)
         {
             var stringTable = new StringTable();
+            //매개변수 id 는 파일이름 영어csv인지 한국csv인지
             stringTable.Load(id);
             tables.Add(id, stringTable);
         }

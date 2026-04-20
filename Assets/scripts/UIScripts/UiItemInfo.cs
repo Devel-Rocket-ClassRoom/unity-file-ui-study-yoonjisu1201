@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class UiItemInfo : MonoBehaviour
 {
+    //string.Format( "{0}: {1}" , 첫번째 인자  ,  두번째 인자  ) 유연성
     public static readonly string FormatCommon = "{0}: {1}";
     public Image imageIcon;
     public TextMeshProUGUI textName;

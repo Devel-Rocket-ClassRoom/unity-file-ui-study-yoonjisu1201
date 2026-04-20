@@ -13,6 +13,7 @@ public class UiInvenSlotList : MonoBehaviour
             {
                 var saveItemData = SaveItemData.GetRandomItem();
                 var newInven = Instantiate(prefab, scrollRect.content);
+                //프리팹 생성후 데이터 넣어주기
                 newInven.SetItem(saveItemData);
             }
         }
