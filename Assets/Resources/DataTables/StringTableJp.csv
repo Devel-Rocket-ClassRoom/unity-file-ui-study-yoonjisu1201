@@ -32,3 +32,18 @@ COST,コスト
 WEAPON,武器
 EQUIP,装備
 CONSUMABLE,消耗品
+SortTimeAscending,日付 (昇順)
+SortTimeDescending,日付 (降順)
+SortNameAscending,名前 (昇順)
+SortNameDescending,名前 (降順)
+SortCostAscending,価格 (昇順)
+SortCostDescending,価格 (降順)
+FilterNone,なし
+FilterWeapon,武器
+FilterEquip,装備
+FilterConsumable,消耗品
+FilterNoneConsumable,消耗品 이외
+Load,ロード
+Save,セーブ
+CreateItem,アイテム生成
+RemoveItem,アイテム削除

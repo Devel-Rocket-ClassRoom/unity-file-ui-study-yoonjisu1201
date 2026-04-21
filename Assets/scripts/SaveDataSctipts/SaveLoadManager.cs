@@ -3,7 +3,8 @@ using SaveDataVC = SaveDataV4; //네이밍 에일리어스 (별명같은거임)
 using Newtonsoft.Json;
 using System.IO;
 using UnityEngine.UIElements;
-    public enum SaveMode
+using UnityEngine.iOS;
+public enum SaveMode
     {
         Text,  //.json
         Encrypted,  // .dat
@@ -27,6 +28,14 @@ public static class SaveLoadManager
 
     //세이브하면 여기에 저장됨
     public static SaveDataVC Data { get; set; } = new SaveDataVC();
+
+    static SaveLoadManager()
+    {
+        if (!Load())
+        {
+            Debug.LogError("세이브 파일 로드 실패");
+        }
+    }
     private static string GetSaveFilePath(int slot)
     {
         return GetSaveFilePath(slot, Mode);
@@ -44,6 +53,7 @@ public static class SaveLoadManager
         // 구버전 세이브도 VersionUp() 마이그레이션 체인을 탈 수 있다.
         TypeNameHandling = TypeNameHandling.All,
     };
+
     public static bool Save(int slot = 0)
     {
         if (Data == null || slot < 0 || slot >= SaveFileNames.Length)
@@ -89,7 +99,7 @@ public static class SaveLoadManager
         var path = GetSaveFilePath(slot);
         if (!File.Exists(path))
         {
-            return false;
+            return Save();
         }
 
         try

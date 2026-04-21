@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using static UnityEngine.LowLevelPhysics2D.PhysicsLayers;
 
@@ -70,11 +71,14 @@ public class SaveDataV3 : SaveData
         }
         return saveData;
     }
-}
+} 
 [System.Serializable]
 public class SaveDataV4 : SaveDataV2
 {
     public List<SaveItemData> ItemList = new List<SaveItemData>();
+    public UiInvenSlotList.SortingOptions ItemSorting = UiInvenSlotList.SortingOptions.NameAscending;
+    public UiInvenSlotList.FilteringOptions ItemFiltering = UiInvenSlotList.FilteringOptions.None;
+
 
     public SaveDataV4()
     {
