@@ -1,7 +1,7 @@
 using UnityEngine;
 using TMPro;
 
-public class UiPanelInventory : MonoBehaviour
+public class UiItemInventory : MonoBehaviour
 {
     public TMP_Dropdown sorting;
     public TMP_Dropdown filtering;

@@ -6,21 +6,30 @@ using UnityEngine;
 //3. DataTableManager 등록
 //4. 테스트 패널
 
+public enum CharacterGrade
+{
+    R,
+    SR,
+    SSR
+}
 public class CharacterData
 {
     public string Id { get; set; }
     public string Name { get; set; }
-    public string Jop { get; set; }
+    public string Job { get; set; }
+    public CharacterGrade Grade { get; set; }
     public string Desc { get; set; }
     public int Atk { get; set; }
     public int Def { get; set; }
     public string Icon { get; set; }
-
+    public string StringName => DataTableManager.StringTable.Get(Name);
+    public string StringJob => DataTableManager.StringTable.Get(Job);
+    public string StringDesc => DataTableManager.StringTable.Get(Desc);
     public Sprite SpriteIcon => Resources.Load<Sprite>($"Icon/{Icon}");
 
     public override string ToString()
     {
-        return $"{Id} / {Name} / {Jop} / {Desc} / {Atk} / {Def} / {Icon}";
+        return $"{Id} / {Name} / {Job} / {Grade} / {Atk} / {Def}";
     }
 }
 

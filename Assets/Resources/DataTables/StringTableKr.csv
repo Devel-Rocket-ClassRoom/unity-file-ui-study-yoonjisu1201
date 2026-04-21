@@ -10,20 +10,37 @@ Item1Desc,이것은 검이다.
 Item2Desc,이것은 방패다.
 Item3Desc,이것은 활이다.
 Item4Desc,이것은 물약이다.
-Char1Name,카일러스
-Char2Name,아스칼론
-Char3Name,엘리노아
-Char4Name,바르보사
-Jop1,궁수
-Jop2,전사
-Jop3,마법사
-Jop4,해적
-Char1Desc,멀리서 한 대 치고 튀는 게 제일 즐거운 궁수
-Char2Desc,앞뒤 안 가리고 일단 몸부터 들이밀고 보는 전사
-Char3Desc,잠잘 시간 빼고는 마법 공부만 하는 지독한 마법사
-Char4Desc,돈이라면 사족을 못 쓰는 해적
+Char_W1_Name,아스칼론
+Char_W2_Name,가이우스
+Char_W3_Name,훈련병
+Char_A1_Name,실바나
+Char_A2_Name,카일러스
+Char_A3_Name,사냥꾼
+Char_M1_Name,엘리노아
+Char_M2_Name,카드리안
+Char_M3_Name,견습생
+Char_P1_Name,바르보사
+Char_P2_Name,드레이크
+Char_P3_Name,선원
+Job_W,전사
+Job_A,궁수
+Job_M,마법사
+Job_P,해적
+Char_W1_Desc,빛의 심판을 내리는 성기사
+Char_W2_Desc,베테랑 용병
+Char_W3_Desc,패기 넘치는 신병
+Char_A1_Desc,바람의 인도자
+Char_A2_Desc,그림자 저격수
+Char_A3_Desc,숲의 추적자
+Char_M1_Desc,전설적인 대마법사
+Char_M2_Desc,불꽃의 지배자
+Char_M3_Desc,마법학교 모범생
+Char_P1_Desc,바다의 폭군
+Char_P2_Desc,보물 사냥꾼 선장
+Char_P3_Desc,거친 바다의 일꾼
 Label_Atk,공격력
 Label_Def,방어력
+Label_Grade,등급
 NAME,이름
 DESC,설명
 TYPE,타입
@@ -47,6 +64,12 @@ Load,불러오기
 Save,저장
 CreateItem,아이템 생성
 RemoveItem,아이템 삭제
+SortDefault,기본 정렬
+SortGradeDesc,등급 높은 순
+SortAtkDesc,공격력 높은 순
+Filter_All,전체 보기
+Filter_SSR,SSR 등급
+Filter_SROver,SR 등급 이상
 
 
 

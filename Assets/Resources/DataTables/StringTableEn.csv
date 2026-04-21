@@ -10,20 +10,37 @@ Item1Desc,This is a sword.
 Item2Desc,This is a shield.
 Item3Desc,This is a bow.
 Item4Desc,This is a potion.
-Char1Name,Kailas
-Char2Name,Ascalon
-Char3Name,Eleanor
-Char4Name,Barbossa
-Jop1,Archer
-Jop2,Warrior
-Jop3,Mage
-Jop4,Pirate
-Char1Desc,An archer who loves kiting from a distance
-Char2Desc,A warrior who always dives headfirst into the fight
-Char3Desc,A nerd mage who studies magic except when sleeping
-Char4Desc,A pirate who would do anything for a gold coin
-Label_Atk,Atk
-Label_Def,Def
+Char_W1_Name,Ascalon
+Char_W2_Name,Gaius
+Char_W3_Name,Recruit
+Char_A1_Name,Sylvana
+Char_A2_Name,Kylas
+Char_A3_Name,Hunter
+Char_M1_Name,Eleonora
+Char_M2_Name,Kadrian
+Char_M3_Name,Apprentice
+Char_P1_Name,Barbosa
+Char_P2_Name,Drake
+Char_P3_Name,Sailor
+Job_W,Warrior
+Job_A,Archer
+Job_M,Mage
+Job_P,Pirate
+Char_W1_Desc,A paladin who brings holy judgment.
+Char_W2_Desc,A veteran mercenary.
+Char_W3_Desc,A passionate but clumsy recruit.
+Char_A1_Desc,The guide of the wind.
+Char_A2_Desc,A sniper in the shadows.
+Char_A3_Desc,A tracker of the forest.
+Char_M1_Desc,A legendary archmage.
+Char_M2_Desc,The master of flames.
+Char_M3_Desc,A model student of the magic school.
+Char_P1_Desc,The tyrant of the sea.
+Char_P2_Desc,A treasure hunter captain.
+Char_P3_Desc,A rough worker of the high seas.
+Label_Atk,ATK
+Label_Def,DEF
+Label_Grade,Grade
 NAME,Name
 DESC,Description
 TYPE,Type
@@ -32,12 +49,12 @@ COST,Cost
 WEAPON,Weapon
 EQUIP,Equipment
 CONSUMABLE,Consumable
-SortTimeAscending,Date (Ascending)
-SortTimeDescending,Date (Descending)
-SortNameAscending,Name (Ascending)
-SortNameDescending,Name (Descending)
-SortCostAscending,Price (Ascending)
-SortCostDescending,Price (Descending)
+SortTimeAscending,Date (Asc)
+SortTimeDescending,Date (Desc)
+SortNameAscending,Name (Asc)
+SortNameDescending,Name (Desc)
+SortCostAscending,Price (Asc)
+SortCostDescending,Price (Desc)
 FilterNone,None
 FilterWeapon,Weapon
 FilterEquip,Equipment
@@ -47,3 +64,9 @@ Load,Load
 Save,Save
 CreateItem,Create Item
 RemoveItem,Remove Item
+SortDefault,Default
+SortGradeDesc,Highest Grade
+SortAtkDesc,Highest ATK
+Filter_All,All Units
+Filter_SSR,SSR Grade
+Filter_SROver,SR or Higher

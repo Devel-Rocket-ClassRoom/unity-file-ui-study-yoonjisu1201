@@ -80,7 +80,6 @@ public static class DataTableManager
     }
     public static T Get<T>(string id) where T : DataTable
     {
-        Debug.Log(id);
         if (!tables.ContainsKey(id))
         {
              Debug.LogError("테이블 없음");

@@ -1,49 +1,72 @@
 ﻿Id,String
-HELLO,やあ
-BYE,じゃあな
-YOU DIE,あなたは死ぬ
+HELLO,こんにちは
+BYE,さようなら
+YOU DIE,あなたは死にました
 Item1Name,剣
 Item2Name,盾
 Item3Name,弓
 Item4Name,ポーション
-Item1Desc,これは剣だ。
-Item2Desc,これは盾だ。
-Item3Desc,これは弓だ。
-Item4Desc,これはポーションだ。
-Char1Name,カイラス
-Char2Name,アスカロン
-Char3Name,エレノア
-Char4Name,バルボッサ
-Jop1,アーチャー
-Jop2,ウォーリアー
-Jop3,メイジ
-Jop4,パイレーツ
-Char1Desc,遠距離攻撃が大好きな弓使い
-Char2Desc,猪突猛進な戦士
-Char3Desc,ガリ勉な魔術師
-Char4Desc,欲張りな海賊
+Item1Desc,これは剣です。
+Item2Desc,これは盾です。
+Item3Desc,これは弓です。
+Item4Desc,これはポーションです。
+Char_W1_Name,アスカロン
+Char_W2_Name,ガイウス
+Char_W3_Name,訓練兵
+Char_A1_Name,シルバナ
+Char_A2_Name,カイラス
+Char_A3_Name,ハンター
+Char_M1_Name,エレオノーラ
+Char_M2_Name,カドリアン
+Char_M3_Name,見習い
+Char_P1_Name,バルボッサ
+Char_P2_Name,ドレイク
+Char_P3_Name,船乗り
+Job_W,戦士
+Job_A,弓使い
+Job_M,魔法使い
+Job_P,海賊
+Char_W1_Desc,聖なる裁きを下す聖騎士
+Char_W2_Desc,ベテランの傭兵
+Char_W3_Desc,覇気あふれる新兵
+Char_A1_Desc,風の導き手
+Char_A2_Desc,影の狙撃手
+Char_A3_Desc,森の追跡者
+Char_M1_Desc,伝説的な大魔法使い
+Char_M2_Desc,火炎の支配者
+Char_M3_Desc,魔法学校の優等生
+Char_P1_Desc,海の暴군
+Char_P2_Desc,トレジャーハンターの船長
+Char_P3_Desc,荒波の働き手
 Label_Atk,攻撃力
 Label_Def,防御力
+Label_Grade,ランク
 NAME,名前
 DESC,説明
 TYPE,タイプ
-VALUE,価値
+VALUE,バリュー
 COST,コスト
 WEAPON,武器
 EQUIP,装備
 CONSUMABLE,消耗品
-SortTimeAscending,日付 (昇順)
-SortTimeDescending,日付 (降順)
-SortNameAscending,名前 (昇順)
-SortNameDescending,名前 (降順)
-SortCostAscending,価格 (昇順)
-SortCostDescending,価格 (降順)
+SortTimeAscending,日付(昇順)
+SortTimeDescending,日付(降順)
+SortNameAscending,名前(昇順)
+SortNameDescending,名前(降順)
+SortCostAscending,価格(昇順)
+SortCostDescending,価格(降順)
 FilterNone,なし
 FilterWeapon,武器
 FilterEquip,装備
 FilterConsumable,消耗品
-FilterNoneConsumable,消耗品 이외
+FilterNoneConsumable,非消耗品
 Load,ロード
 Save,セーブ
 CreateItem,アイテム生成
 RemoveItem,アイテム削除
+SortDefault,デフォルト
+SortGradeDesc,ランク高い順
+SortAtkDesc,攻撃力高い順
+Filter_All,すべて表示
+Filter_SSR,SSR ランク
+Filter_SROver,SR ランク以上
