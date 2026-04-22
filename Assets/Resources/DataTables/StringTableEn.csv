@@ -11,17 +11,17 @@ Item2Desc,This is a shield.
 Item3Desc,This is a bow.
 Item4Desc,This is a potion.
 Char_W1_Name,Ascalon
-Char_W2_Name,Gaius
-Char_W3_Name,Recruit
+Char_W2_Name,Ascalon
+Char_W3_Name,Ascalon
 Char_A1_Name,Sylvana
-Char_A2_Name,Kylas
-Char_A3_Name,Hunter
+Char_A2_Name,Sylvana
+Char_A3_Name,Sylvana
 Char_M1_Name,Eleonora
-Char_M2_Name,Kadrian
-Char_M3_Name,Apprentice
+Char_M2_Name,Eleonora
+Char_M3_Name,Eleonora
 Char_P1_Name,Barbosa
-Char_P2_Name,Drake
-Char_P3_Name,Sailor
+Char_P2_Name,Barbosa
+Char_P3_Name,Barbosa
 Job_W,Warrior
 Job_A,Archer
 Job_M,Mage

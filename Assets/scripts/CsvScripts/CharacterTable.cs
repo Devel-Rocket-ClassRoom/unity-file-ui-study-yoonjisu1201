@@ -25,7 +25,7 @@ public class CharacterData
     public string StringName => DataTableManager.StringTable.Get(Name);
     public string StringJob => DataTableManager.StringTable.Get(Job);
     public string StringDesc => DataTableManager.StringTable.Get(Desc);
-    public Sprite SpriteIcon => Resources.Load<Sprite>($"Icon/{Icon}");
+    public Sprite SpriteIcon => Resources.Load<Sprite>($"UiIcon/{Icon}");
 
     public override string ToString()
     {

@@ -11,17 +11,17 @@ Item2Desc,이것은 방패다.
 Item3Desc,이것은 활이다.
 Item4Desc,이것은 물약이다.
 Char_W1_Name,아스칼론
-Char_W2_Name,가이우스
-Char_W3_Name,훈련병
+Char_W2_Name,아스칼론
+Char_W3_Name,아스칼론
 Char_A1_Name,실바나
-Char_A2_Name,카일러스
-Char_A3_Name,사냥꾼
+Char_A2_Name,실바나
+Char_A3_Name,실바나
 Char_M1_Name,엘리노아
-Char_M2_Name,카드리안
-Char_M3_Name,견습생
+Char_M2_Name,엘리노아
+Char_M3_Name,엘리노아
 Char_P1_Name,바르보사
-Char_P2_Name,드레이크
-Char_P3_Name,선원
+Char_P2_Name,바르보사
+Char_P3_Name,바르보사
 Job_W,전사
 Job_A,궁수
 Job_M,마법사
