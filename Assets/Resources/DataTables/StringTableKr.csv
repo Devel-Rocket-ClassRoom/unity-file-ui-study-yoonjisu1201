@@ -64,6 +64,8 @@ Load,불러오기
 Save,저장
 CreateItem,아이템 생성
 RemoveItem,아이템 삭제
+CreateCharacter,캐릭터 생성
+DeleteCharacter,캐릭터 삭제
 SortDefault,기본 정렬
 SortGradeDesc,등급 높은 순
 SortAtkDesc,공격력 높은 순

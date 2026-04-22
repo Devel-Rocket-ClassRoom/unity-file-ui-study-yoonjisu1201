@@ -64,6 +64,8 @@ Load,Load
 Save,Save
 CreateItem,Create Item
 RemoveItem,Remove Item
+CreateCharacter,Create Character
+DeleteCharacter,Delete Character
 SortDefault,Default
 SortGradeDesc,Highest Grade
 SortAtkDesc,Highest ATK
