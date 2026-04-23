@@ -16,6 +16,12 @@ public class UiCharInfo : MonoBehaviour
     public TextMeshProUGUI AtkValue;
     public TextMeshProUGUI DefValue;
 
+    public Image imageFrame;
+    public Sprite spriteSSR;
+    public Sprite spriteSR;
+    public Sprite spriteR;
+    public Sprite spriteEmpty;
+
 
     public void SetEmpty()
     {
@@ -28,6 +34,10 @@ public class UiCharInfo : MonoBehaviour
         DefText.text = string.Empty;
         AtkValue.text = string.Empty;
         DefValue.text = string.Empty;
+        if (imageFrame != null)
+        {
+            imageFrame.sprite = spriteEmpty;
+        }
     }
     public void SetSaveCharData(SaveCharData saveCharData)
     {
@@ -42,5 +52,15 @@ public class UiCharInfo : MonoBehaviour
         DefText.text = DataTableManager.StringTable.Get("Label_Def");
         AtkValue.text = data.Atk.ToString();
         DefValue.text = data.Def.ToString();
+
+        if (imageFrame != null)
+        {
+            switch (data.Grade)
+            {
+                case CharacterGrade.SSR: imageFrame.sprite = spriteSSR; break;
+                case CharacterGrade.SR: imageFrame.sprite = spriteSR; break;
+                case CharacterGrade.R: imageFrame.sprite = spriteR; break;
+            }
+        }
     }
 }
